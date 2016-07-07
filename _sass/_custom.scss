@@ -1,0 +1,280 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// COLORS ///////////////////////////////////////////////////////////
+$black-100: rgba(0,0,0,1);
+$black-90:  rgba(26,26,26,1);
+$black-80:  rgba(51,51,51,1);
+$black-70:  rgba(77,77,77,1);
+$black-60:  rgba(102,102,102,1);
+$black-50:  rgba(128,128,128,1);
+$black-40:  rgba(153,153,153,1);
+$black-30:  rgba(179,179,179,1);
+$black-20:  rgba(205,205,205,1);
+$black-15:  rgba(217,217,217,1);
+$black-10:  rgba(229,229,229,1);
+$black-5:   rgba(242,242,242,1);
+$white:     rgba(255,255,255,1);
+
+$dark-gray: rgba(0,0,0,0.7);
+$med-gray: rgba(0,0,0,0.5);
+$light-gray: rgba(234,234,234,1.0);
+
+
+
+
+
+
+
+
+
+// TYPOGRAPHY ///////////////////////////////////////////////////////
+
+$heading-font-family: 'Open Sans Condensed', Arial, serif;
+$base-font-family: 'Open Sans Condensed', Arial, serif;
+
+h1, h2, h3 {
+  font-family: $heading-font-family;
+  text-align: center;
+}
+
+h1  {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h2  {
+  color: $black-30;
+  font-size: 1.9em;
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+  text-transform: uppercase;
+}
+
+h3  {
+  color: $black-80;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+  text-transform: uppercase;
+}
+
+p, ul  {
+  color: $black-50;
+  font-family: $base-font-family;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 1em 0 1em 0;
+}
+
+ul  {
+  list-style-type: square;
+}
+
+.email-gray {
+  width: 110px;
+}
+
+
+
+
+
+
+
+// UNIVERSAL ////////////////////////////////////////////////////////
+
+body {
+  padding-top: 80px;
+}
+
+section {
+  margin-bottom: 6em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.container  {
+  padding: 0 0 0 0;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+
+.link-underlined  {
+  color: $black-80;
+  text-decoration: underline;
+}
+
+.link-underlined
+  a, a:focus, a:hover  {
+    color: $black-30;
+    text-decoration: underline;
+  }
+
+
+
+
+.btn  {
+  font-family: $base-font-family;
+  border-radius: 0px;
+  margin: 10px 0 10px 0;
+}
+
+.btn-default {
+  color: $black-50;
+  background-color: $white;
+  border-color: $black-10;
+
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .btn-default.dropdown-toggle {
+  color: $white;
+  background-color: $black-10;
+  border-color: $black-10;
+}
+
+
+
+
+
+.border-red  {
+  border: 1px solid red;
+}
+
+.border-blue  {
+  border: 1px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+// DISPLAY BOXES /////////////////////////////////////////////////////////
+
+.display-box  {
+  border: 1px solid $black-10;
+  margin-top: -1px;
+  text-align: center;
+
+  img  {
+    margin: 0px auto 0px auto;
+  }
+
+  ul  {
+    margin: 0.7em 0 0.7em 0px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+}
+
+
+.display-box-padded  {
+  border: 1px solid $black-10;
+  margin-top: -1px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+
+  img  {
+    margin: 0px auto 0px auto;
+    margin-bottom: 20px;
+
+  }
+
+  ul  {
+    margin: 0.7em 0 0.7em 0px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+}
+
+
+.padded-20px  {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.padding-top-20px  {
+  padding-top: 20px;
+}
+
+.margin-bottom-20px  {
+  margin-bottom: 20px;
+}
+
+.padding-sides-20px  {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+.video  {
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container-sd {
+  position: relative;
+  padding-bottom: 70%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+// MEDIA QUERIES /////////////////////////////////////////////////////
+
+@media (min-width: 768px)  {
+
+  .navbar-nav  {
+    margin: 14px 0 0 0;
+  }
+
+  .logo  {
+    max-height: 70px;
+    margin: 5px auto;
+    padding: 0 0 0 0;
+  }
+}
